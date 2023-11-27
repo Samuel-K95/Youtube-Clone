@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .channel-tooltip{
+                padding-left: 15px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-style: none;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                max-width: 250px;
+                box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            .channel-tooltip:hover{
+                opacity: 1;
+            }
+            .image-container{
+                margin-right: 10px;
+                width: 70px;
+            }
+
+            .channel-picture{
+                width: 65px;
+                height: 65px;
+                border-radius: 32.5px;
+            }
+
+            .channel-name{
+                align-items: center;
+                flex: 1;
+            }
+            .channel-owner{
+                font-family: Roboto, Arial;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+            }
+
+            .subscribers-count{
+                font-family: Roboto, Arial;
+                color: gray;
+                margin-top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="channel-tooltip">
+            <div class="image-container">
+                <img src="channel/channel-1.jpeg" class="channel-picture">
+            </div>
+            <div class="channel-name">
+                <p class="channel-owner">Marques Brownlee</p>
+                <p class="subscribers-count">15M subscribers</p>
+            </div>
+        </div>
+    </body>
+</html>
